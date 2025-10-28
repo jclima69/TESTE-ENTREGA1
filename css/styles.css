@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1em;
+}
+.logo {
+  height: 50px;
+  vertical-align: middle;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  padding: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+main {
+  padding: 2em;
+}
+section {
+  margin-bottom: 2em;
+}
+form {
+  display: grid;
+  gap: 1em;
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+label {
+  font-weight: bold;
+}
+input, select, button {
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #005f87;
+}
+footer {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
