@@ -1,7 +1,7 @@
-// js/script.js - ATUALIZADO COM SISTEMA COMPLETO DE MENSAGENS DE ERRO
+// MENSAGENS DE ERRO COMPLETAS
 
 // =============================================
-// MÁSCARAS DE INPUT
+// MÁSCARAS DE ENTRADA
 // =============================================
 
 class InputMask {
@@ -51,7 +51,7 @@ class InputMask {
 }
 
 // =============================================
-// SISTEMA DE MENSAGENS DE ERRO
+// MENSAGENS DE ERRO
 // =============================================
 
 class ErrorManager {
@@ -70,7 +70,7 @@ class ErrorManager {
         if (targetElement) {
             const formGroup = targetElement.closest('.form-group');
             if (formGroup) {
-                // Adicionar classe de erro
+                // Classe de erro
                 formGroup.classList.add('error');
                 
                 // Criar elemento de mensagem de erro
@@ -83,13 +83,13 @@ class ErrorManager {
                 
                 formGroup.appendChild(errorElement);
                 
-                // Adicionar atributo aria-invalid
+                // Atributo aria-invalid
                 if (input) {
                     input.setAttribute('aria-invalid', 'true');
                     input.setAttribute('aria-describedby', `${fieldName}-error`);
                 }
                 
-                // Adicionar foco no campo com erro
+                // Foco no campo com erro
                 if (input && input.type !== 'hidden') {
                     input.focus();
                 }
@@ -127,7 +127,7 @@ class ErrorManager {
     }
 
     static showGlobalError(message, form = null) {
-        // Remover erro global anterior
+        // Remover erro global
         this.clearGlobalError(form);
         
         const targetForm = form || document;
@@ -576,7 +576,7 @@ class FormValidator {
     showSuccessMessage() {
         ErrorManager.showToast('Cadastro realizado com sucesso! Em breve entraremos em contato.', 'success');
         
-        // Também mostrar mensagem no contexto do formulário
+        // Mostrar mensagem no contexto do formulário
         const successMessage = document.createElement('div');
         successMessage.className = 'success-message global';
         successMessage.innerHTML = `
@@ -824,5 +824,3 @@ document.addEventListener('DOMContentLoaded', function() {
     window.ErrorManager = ErrorManager;
     window.copyPixKey = PlatformFunctionality.copyPixKey;
 });
-
-// Restante do código permanece igual...
