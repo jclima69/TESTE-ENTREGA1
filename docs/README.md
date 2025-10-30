@@ -1,4 +1,4 @@
-# 🌍 Plataforma Web para ONGs - ONG Esperança
+# 🌍 Plataforma Web - MudaDF
 
 ## 🎯 Objetivo
 Desenvolver uma plataforma web completa que permita às ONGs gerenciar projetos, captar recursos e engajar voluntários.
