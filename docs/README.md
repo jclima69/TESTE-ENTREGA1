@@ -27,7 +27,7 @@ meu-projeto/
 3. Navegue pelas páginas do site.
 
 ## 🌐 Publicação no GitHub Pages
-Após subir o código no GitHub, ative o GitHub Pages nas configurações do repositório e copie o link gerado.
+https://jclima69.github.io/TESTE-ENTREGA1/
 
 ## 📧 Contato
 Projeto desenvolvido por Jaime Lima.
